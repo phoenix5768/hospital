@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Registration</title>
+</head>
+<body>
+    <h3>Register the doctor</h3>
+
+    <form action="/doctor" method="post">
+        {% csrf_token %}
+
+        <label for="">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your First Name" Required>
+        <br>
+
+        <label for="">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" Required>
+        <br>
+
+        <label for="">Middle Name (Optional)</label>
+        <input type="text" id="mname" name="mname" placeholder="Enter your Middle Name">
+        <br>
+
+        <label for="">IIN</label>
+        <input type="text" id="iin" name="iin" placeholder="Enter your IIN" Required>
+        <br>
+
+        <label for="">Date of Birth</label>
+        <input type="date" id="dob" name="dob" placeholder="Enter your Date of born" Required>
+        <br>
+
+        <label for="">Contact Number</label>
+        <input type="text" id="num" name="num" placeholder="Enter your Email address" Required>
+        <br>
+
+        <label for="">Department ID</label>
+        <input type="text" id="department" name="department" placeholder="Enter your Department ID" Required>
+        <br>
+
+        <label for="">Specialization Details ID</label>
+        <input type="text" id="specialization" name="specialization" placeholder="Enter your Specialization Details ID" Required>
+        <br>
+
+        <label for="">Experience in Years</label>
+        <input type="text" id="experience" name="experience" placeholder="Enter your experience" Required>
+        <br>
+
+        <label for="">Category</label>
+        <input type="text" id="category" name="category" placeholder="Enter your category" Required>
+        <br>
+
+        <label for="">Price</label>
+        <input type="text" id="price" name="price" placeholder="Enter your price" Required>
+        <br>
+
+        <label for="">Schedule Details</label>
+        <input type="text" id="schedule" name="schedule" placeholder="Enter your schedule" Required>
+        <br>
+
+        <label for="">Degree of Education</label>
+        <select id="degree" name="degree" Required>
+            <option value="No Education">No Education</option>
+            <option value="High School Diploma">High School Diploma</option>
+            <option value="Certificate or associate degree">Certificate or associate degree</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="Doctorate">Doctorate</option>
+        </select>
+        <br>
+
+        <label for="">Rating</label>
+        <select id="rating" name="rating" Required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+
+        <label for="">Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your Email address" Required>
+        <br><br>
+
+        <button type="submit">Register the Doctor</button>
+        <br><br>
+
+        <button type="submit"><a href="/adminpage">Back to admin page</a></button>
+    </form>
+</body>
+</html>
